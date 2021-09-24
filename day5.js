@@ -83,11 +83,23 @@ console.log(strivify("The best way to understand javascript"))
      HINT: Modulus Operator
     */
 
-/* WRITE YOUR ANSWER HERE */
-
-/* EXERCISE 7
- Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
-*/
+const check3and7 = function(int) {
+    if (int > 0) {
+        let checkPar = true;
+        if ((int % 3 == 0) || (int % 7 == 0)) {
+            return console.log(checkPar)
+        } else {
+            checkPar = false;
+            console.log(checkPar)
+        }
+    } else {
+        console.log("ALERT! CHOISE A POSITIVE NUMBER")
+    }
+}
+console.log(check3and7(9))
+    /* EXERCISE 7
+     Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
+    */
 
 /* WRITE YOUR ANSWER HERE */
 
