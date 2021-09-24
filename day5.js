@@ -97,15 +97,32 @@ const check3and7 = function(int) {
     }
 }
 console.log(check3and7(9))
-    /* EXERCISE 7
-     Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
-    */
 
-/* WRITE YOUR ANSWER HERE */
-
-/* EXERCISE 8
- Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
+/* EXERCISE 7
+ Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
+const reverseString = function(string) {
+    let strSplit = string.split("");
+    let reveseArr = strSplit.reverse();
+    let joinArr = reveseArr.join();
+    return joinArr;
+
+}
+
+console.log(reverseString("prova"))
+    // ---------------- another way to do it CHEK for ERROR!-------------
+    /* const reverseString1 = function(string) {
+        let acc = "";
+        for (let i = string.lenght - 1; i >= 0; i--) {
+            acc += string[i]
+
+        }
+        return acc
+    }
+    console.log(reverseString1("Altra prova")) */
+    /* EXERCISE 8
+     Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
+    */
 
 /* WRITE YOUR ANSWER HERE */
 
