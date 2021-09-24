@@ -120,24 +120,41 @@ console.log(reverseString("prova"))
         return acc
     }
     console.log(reverseString1("Altra prova")) */
-    /* EXERCISE 8
-     Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
-    */
 
-/* WRITE YOUR ANSWER HERE */
 
+/* EXERCISE 8
+ Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
+*/
+
+/* const upperFirst = function(string) {
+    let stringArr = string.split(" ");
+    console.log(stringArr)
+    for (let i = 0; i < stringArr.lenght; i++) {
+        stringArr[i] = stringArr[0][1].toUpperCase() + stringArr[i].substr(1)
+    }
+    stringArr.join(" ");
+    return stringArr;
+}
+console.log(upperFirst("milano al tempo del colera")) */
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
+
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-/* WRITE YOUR ANSWER HERE */
-
-/* WHEN YOU ARE FINISHED
- Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
-*/
+const giveMeRandom = function(n) {
+    let arr = [];
+    for (let i = 0; i <= n; i++) {
+        let randomNumber = Math.floor(Math.random() * 10);
+        arr[i] = arr.push[randomNumber]
+    }
+    return arr;
+}
+console.log(giveMeRandom(3))
+    /* WHEN YOU ARE FINISHED
+     Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
+    */
