@@ -139,8 +139,12 @@ console.log(upperFirst("milano al tempo del colera")) */
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
-
-
+const cutString = function(string) {
+    let lenght = string.lenght;
+    string = string.substring(0, lenght - 1);
+    return string;
+}
+console.log(cutString("alessio"))
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
