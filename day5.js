@@ -69,12 +69,19 @@ console.log(boundary(400))
      It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
     */
 
-/* WRITE YOUR ANSWER HERE */
+const strivify = function(string) {
 
-/* EXERCISE 6
- Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
- HINT: Modulus Operator
-*/
+    if (string.split(" ")[0] !== "Strive") {
+        return console.log("Strive " + string);
+    } else {
+        return console.log(string)
+    }
+}
+console.log(strivify("The best way to understand javascript"))
+    /* EXERCISE 6
+     Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
+     HINT: Modulus Operator
+    */
 
 /* WRITE YOUR ANSWER HERE */
 
