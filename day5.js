@@ -52,12 +52,22 @@ console.log(crazyDiff(20))
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
 
-/* WRITE YOUR ANSWER HERE */
 
-/* EXERCISE 5
- Write a function called "strivify" which accepts a string as a parameter.
- It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
-*/
+const boundary = function(n) {
+    let controlValue = true;
+    if (n >= 20 && n <= 100 || n == 400) {
+        return controlValue;
+    } else {
+
+        return controlValue = false;
+    }
+
+}
+console.log(boundary(400))
+    /* EXERCISE 5
+     Write a function called "strivify" which accepts a string as a parameter.
+     It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
+    */
 
 /* WRITE YOUR ANSWER HERE */
 
