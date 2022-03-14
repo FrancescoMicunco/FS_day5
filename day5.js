@@ -104,7 +104,7 @@ console.log(check3and7(9))
 const reverseString = function(string) {
     let strSplit = string.split("");
     let reveseArr = strSplit.reverse();
-    let joinArr = reveseArr.join();
+    let joinArr = reveseArr.join("");
     return joinArr;
 
 }
@@ -145,20 +145,20 @@ const cutString = function(string) {
     return string;
 }
 console.log(cutString("alessio"))
-
-/* EXERCISE 10
- Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
-*/
+    // use slice!!!
+    /* EXERCISE 10
+     Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
+    */
 
 const giveMeRandom = function(n) {
-    let arr = [];
+    const arr = [];
     for (let i = 0; i <= n; i++) {
         let randomNumber = Math.floor(Math.random() * 10);
-        arr[i] = arr.push[randomNumber]
+        arr.push(randomNumber)
     }
     return arr;
 }
-console.log(giveMeRandom(3))
+console.log(giveMeRandom(6))
     /* WHEN YOU ARE FINISHED
      Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
     */
